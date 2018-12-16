@@ -1,0 +1,42 @@
+{
+  "name": "900k",
+  "version": "1.0.0",
+  "description": "A wordpress theme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "start": "gulp",
+    "run": "gulp run"
+  },
+  "author": "900K",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leovdw/900K-Theme"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "*",
+    "gulp-babel": "^8.0.0",
+    "gulp-browserify": "*",
+    "gulp-clean-css": "*",
+    "gulp-concat": "*",
+    "gulp-imagemin": "*",
+    "gulp-notify": "*",
+    "gulp-plumber": "*",
+    "gulp-require-tasks": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "*"
+  },
+  "dependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@material/button": "^0.40.1",
+    "babelify": "^10.0.0",
+    "material-components-web": "^0.42.0",
+    "npm-upgrade": "^1.4.1",
+    "register": "0.0.0"
+  }
+}

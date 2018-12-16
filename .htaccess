@@ -1,0 +1,17 @@
+# Only allow direct access to specific Web-available files.
+
+# Apache 2.4
+<IfModule mod_authz_core.c>
+	Require all denied
+</IfModule>
+
+# Akismet CSS and JS
+<FilesMatch "^(bundle.min\.js|bundle\.js|app.min\.css|app\.css)$">
+	<IfModule !mod_authz_core.c>
+		Allow from all
+	</IfModule>
+
+	<IfModule mod_authz_core.c>
+		Require all granted
+	</IfModule>
+</FilesMatch>
